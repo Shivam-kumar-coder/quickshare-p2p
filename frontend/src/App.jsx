@@ -6,11 +6,21 @@ import Room from './pages/Room.jsx'
 function App() {
   return (
     <BrowserRouter>
-      <Toaster />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/room/:roomId" element={<Room />} />
-      </Routes>
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+        <Toaster 
+          position="top-right"
+          toastOptions={{
+            style: {
+              background: '#363636',
+              color: '#fff',
+            },
+          }}
+        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/room/:roomId" element={<Room />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }
