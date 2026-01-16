@@ -7,10 +7,6 @@ export default defineConfig({
     port: 5173
   },
   build: {
-    outDir: 'dist',
-    sourcemap: true,
-    rollupOptions: {
-      external: []  // ✅ Empty array - no external dependencies
-    }
+    outDir: 'dist'
   }
 })
